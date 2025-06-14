@@ -1,0 +1,32 @@
+{
+  "name": "whatsapp-monitor",
+  "version": "1.0.0",
+  "description": "WhatsApp message monitoring system with real-time dashboard",
+  "main": "whatsapp-real.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node whatsapp-real.js",
+    "dev": "node whatsapp-real.js",
+    "build": "npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["whatsapp", "monitoring", "nodejs", "render", "deployment"],
+  "author": "al-redowan",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:al-redowan/whatsapp-real.git"
+  },
+  "homepage": "https://github.com/al-redowan/whatsapp-real#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "puppeteer": "^24.10.0",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.30.0",
+    "ws": "^8.18.2"
+  }
+}
