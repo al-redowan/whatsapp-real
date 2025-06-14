@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: whatsapp-monitor
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: HEADLESS
+        value: true
+    healthCheckPath: /api/health
