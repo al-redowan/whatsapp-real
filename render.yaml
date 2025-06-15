@@ -3,8 +3,8 @@ services:
     name: whatsapp-monitor
     env: node
     plan: free
-    buildCommand: npm install
-    startCommand: npm start
+    buildCommand: npm ci --omit=dev --ignore-scripts
+    startCommand: node whatsapp-optimized.js
     envVars:
       - key: NODE_ENV
         value: production
@@ -12,4 +12,9 @@ services:
         value: 10000
       - key: HEADLESS
         value: true
-    healthCheckPath: /api/health
+      - key: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD
+        value: true
+      - key: PUPPETEER_EXECUTABLE_PATH
+        value: /usr/bin/chromium-browser
+    healthCheckPath: /health
+    autoDeploy: false
