@@ -336,7 +336,7 @@ app.use((req, res, next) => {
     }
 });
 
-app.use(express.static('./public'));
+app.use(express.static('./'));
 app.use(express.json());
 
 const PORT = process.env.PORT || 8080;
