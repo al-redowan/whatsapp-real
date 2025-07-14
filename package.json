@@ -10,7 +10,7 @@
     "start": "node whatsapp-real.js",
     "dev": "node whatsapp-real.js",
     "build": "npm install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No tests yet\""
   },
   "keywords": ["whatsapp", "monitoring", "nodejs", "render", "deployment"],
   "author": "al-redowan",
