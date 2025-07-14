@@ -336,10 +336,10 @@ app.use((req, res, next) => {
     }
 });
 
-app.use(express.static('./'));
+app.use(express.static('./public'));
 app.use(express.json());
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 80;
 let messageCount = 0;
 const startTime = Date.now();
 
